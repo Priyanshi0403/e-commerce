@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
+
+        <!--jQuery library--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SignUp</title>
+        <style>
+            footer{
+                
+               background-color:black;
+                color:#FFFFFF;
+                position:fixed;
+                clear:both;
+                width: 100%;
+                text-align: center;
+                bottom: 0;
+            }
+            .row_style{
+                 margin-top: 110px;
+                margin-left: 100px;
+                
+            }
+            .link{ 
+            color: #FFFFFF;
+             }
+
+
+        </style>
+    </head>
+    <body>  
+     
+        <div class="navbar navbar-inverse navbar-fixed-top" >
+            <div class="container">
+                <div class="navbar-header" >
+                    <a href="onlineshopping.html" class="navbar-brand" style="color: white">E-Store</a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="sign up.html" style="color: white"><span class="glyphicon glyphicon-user "></span>  Sign Up</a></li>
+                         <li type="button" data-toggle="modal" data-target="#myModal"><a href="login.html" style="color: white"><span class="glyphicon glyphicon-log-in"></span>  Login</a></li>
+                        <li><a href="about us.html" style="color: white"><span class="glyphicon glyphicon-th-list "></span> About Us</a></li>
+                        <li><a href="contact us.html" style="color: white"><span class="glyphicon glyphicon-phone "></span>  Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+        <div class="row row_style">
+            <div class="col-sm-6 col-md-6">
+              <img style="height: 210px; margin-top: 70px" src="signup.png" >
+            </div>
+            <div class="col-sm-6 col-md-6">
+                
+                <h4 class="font2">SIGN UP</h4>
+
+                
+                <div class="form-group">
+                  <label for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" >
+                </div>
+               
+                 <div class="form-group">
+                   <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" required="true">
+                </div>
+                
+                 <div class="form-group">
+                  <label for="password">Password</label>
+                    <input type="text" name="password" id="password" class="form-control" required="true">
+                </div>
+               
+                 <div class="form-group">
+                   <label for="contact">Contact</label>
+                    <input type="text" name="contact" id="contact" class="form-control">
+                </div>
+               
+                 <div class="form-group">
+                   <label for="city">City</label>
+                    <input type="text" name="city" id="city" class="form-control">
+                </div>
+
+                 <div class="form-group">
+                  <label for="address">Address</label>
+                    <input type="text" name="address" id="adderss" class="form-control">
+                </div>
+                <button class="btn btn-primary">Submit</button>
+            
+            </div>
+        </div>
+    </div>
+    
+    <div>
+                 
+                <footer>
+                 <div class="col-md-4 col-sm-4">
+                    <h4>Information</h4>
+                </div>
+                 <div class="col-md-4 col-sm-4">
+                    <h4>My Account</h4>
+                </div>
+                 <div class="col-md-4 col-sm-4">
+                    <h4 class="link">Contact us</h4>
+                </div>
+                 <div class="col-md-4 col-sm-4">
+                    <a class="link" href="about us.html"><h5>About Us</h5></a>
+                </div>
+                 <div class="col-md-4 col-sm-4">
+                    <a  class="link"  href="login.html"><h5>Login</h5></a>
+                </div>
+                 <div class="col-md-4 col-sm-4">
+                    <h5>Contact +91 9000000000</h5>
+                </div>
+                 <div class="col-md-4 col-sm-4">
+                    <a  class="link"  href="contact us.html"><h5>Contact Us</h5></a>
+                </div>
+                 <div class="col-md-4 col-sm-4">
+                    <a  class="link" href="sign up.html"><h5>Signup</h5></a>
+                 </div>
+
+               </footer>              
+            </div>
+
+              <!-- Modal -->
+                         <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+                        
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <h4 class="modal-title">Login</h4>
+                            </div>
+                            <div class="modal-body">
+                              <div class="panel ">
+                                        <div class="panel-body">
+                                            <p>Don't have an account?<a href="sign up.html"> Register</a></p>
+                                            <form>
+                                                <div class="form-group">
+                                                <input type="text" name="Email" placeholder="Email" class="form-control"></div>
+                                                <div class="form-group">
+                                                <input type="text" name="Password" placeholder="Password" class="form-control"></div>
+                                            </form>
+                                            <button class="btn btn-primary">Login</button>
+                                        </div>
+                                    </div>
+                                        <div>
+                                            <footer class="panel-footer"><a href="#">Forget Password?</a></footer>
+                                    </div>
+                                
+                            </div>
+                            
+                          </div>
+                          
+                        </div>
+                      </div>
+
+        </body>
+        </html>
+
+
